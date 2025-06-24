@@ -1,0 +1,4 @@
+"O alerta vem para esse arquivo, exemplo abaixo:"
+
+!] Acesso de pais nao permitido - IP: hacker - Usuario: nan - Pais: 10 - Tentativas: nan
+[!] Acesso de pais nao permitido - IP: usuario_legitimo - Usuario: nan - Pais: 2 - Tentativas: nan
