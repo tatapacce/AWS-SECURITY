@@ -4,8 +4,8 @@ paises_permitidos:
 limite_tentativas_login: 5
 
 email_alertas:
-  remetente: "remetente@gmail.com"
-  senha: "sua_senha_do_email" 
-  destinatario: "destinatario@email.com"
-  smtp: "smtp.gmail.com"
+  remetente: "@@"
+  senha: "@@" 
+  destinatario: "@@"
+  smtp: "@@"
   porta: 587
