@@ -1,28 +1,43 @@
 # 🔐 AWS-SECURITY – Monitoramento de Acessos Suspeitos com Python
 
-Este projeto simula um sistema de monitoramento e alerta de segurança, capaz de identificar **tentativas de acesso suspeitas** com base em logs de login, geolocalização de IPs e envio de notificações por e-mail.
+Este é um projeto pessoal desenvolvido com o objetivo de identificar e alertar tentativas de login suspeitas a partir de logs simulados, com foco em segurança em ambientes baseados na nuvem (como AWS). O sistema realiza a verificação da geolocalização de IPs, valida países autorizados e envia alertas automáticos por e-mail.
 
-💡 **Pronto para integrar com AWS CloudTrail  .
+---
+## Tecnologias Utilizadas
+
+- Python – Linguagem principal
+- Pandas – Para análise e tratamento de dados dos logs
+- Requests – Para chamadas HTTP à API de geolocalização
+- PyYAML – Para leitura do arquivo de configurações
+- SMTP (email) – Para envio automático de alertas
+- API ipapi.co – Para identificar o país de origem dos IPs
 
 ---
 
-## 📌 Funcionalidades
+## 🌐 Fonte dos Dados
 
--  Identificação de tentativas de login vindas de IPs suspeitos
--  Localização do IP via API pública (ipapi.co)
--  Validação contra uma lista de países permitidos
--  Envio automático de alertas por e-mail
--  Geração de relatórios em arquivo `.txt`
--  Estrutura pronta para ler logs da AWS (simulados via JSON)
+Os dados utilizados simulam logs de login, como os que podem ser extraídos do AWS CloudTrail. A geolocalização dos IPs é feita por meio da API pública [ipapi.co](https://ipapi.co/).
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## ⚙️ Funcionalidades
 
-- Python 3
-- [Pandas](https://pandas.pydata.org/)
-- [Requests](https://requests.readthedocs.io/)
-- [YAML](https://pyyaml.org/)
-- API pública [ipapi.co](https://ipapi.co/)
+- Leitura de logs locais (CSV ou JSON simulado)
+- Consulta do país de origem do IP
+- Verificação contra uma lista de países permitidos
+- Geração automática de relatório de alertas
+- Envio de e-mail em caso de acesso suspeito
+- Estrutura pronta para integração com AWS S3 e CloudTrail
+
+---
+
+## 🎯 Objetivos do Projeto
+
+- Simular um sistema de segurança com base em análise de logs
+- Praticar integração com APIs externas (ipapi)
+- Automatizar notificações por e-mail
+- Aprimorar boas práticas com Python voltado à cibersegurança
+- Construir uma solução pronta para futura integração com a AWS
+
 
 
